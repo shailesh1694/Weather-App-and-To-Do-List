@@ -1,0 +1,11 @@
+.inline{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+*{
+box-sizing: border-box;
+
+justify-content: center;
+margin: 5px;
+}
