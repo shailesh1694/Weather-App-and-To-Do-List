@@ -6,10 +6,13 @@ function Whether() {
 
     const [search, setSearch] = useState('bhavnagar')
     const [wheatherinfo, setWheatherinfo] = useState({})
+    let apiid= undefined
+
+    //plese opwnweather app and register with accounte to get api id ;
        async function serchweatherdata (){
                     
                     try{
-                        let url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=e23bd1e3129b7d41e21887c7ce4e11be&units=metric`);
+                        let url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiid}&units=metric`);
                         let data = await url.json();
                         console.log(data);
 
